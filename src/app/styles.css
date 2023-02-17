@@ -1,0 +1,102 @@
+root{
+    alignment: center;
+    padding: 10% 10%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Josefin Slab', serif;
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+div{
+    text-align: center;
+    alignment: center;
+    position: center;
+    align: center;
+    width: 100%;
+}
+
+
+h3{
+    color: dimgray;
+    top: 20px;
+    padding: 0 5px;
+}
+
+
+h2{
+    size: 12px;
+    top: 20px;
+    padding: 10px 5px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+section {
+    border-radius: 10px;
+    text-align: center;
+    padding: 16px;
+    border: 3px solid darkgray;
+    margin: auto;
+    width: 60%;
+    height: 60%;
+    alignment: center;
+    display: block;
+    margin-top: 5em;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    size: A3;
+}
+
+
+.day_d {
+    text-align: center;
+    margin: auto;
+    padding: 5%;
+    display: grid;
+    gap: 8px;
+}
+
+
+
+.app-page {
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    width: 100%;
+    background: aliceblue;
+    margin: 15px;
+    height: max-content;
+}
+
+.app-page-close {
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    width: 100%;
+    background: aliceblue;
+    margin: 15px;
+    height: 20vh;
+}
+
+.main-page {
+    text-align: center;
+    alignment: center;
+    position: center;
+    align: center;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

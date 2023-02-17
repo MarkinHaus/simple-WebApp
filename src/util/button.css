@@ -1,0 +1,23 @@
+button{
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: x-large;
+    border: 3px solid black;
+}
+
+button:hover{
+    border: 3px solid lightblue;
+}
+
+button:focus{
+    color: lightblue
+    border: 3px solid lightblue;
+    outline: lightblue none 3px;
+}
+
+button:after{
+    border: 3px solid lightblue;
+    background-color: black;
+    color: white;
+}
+

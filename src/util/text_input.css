@@ -1,0 +1,47 @@
+
+.container{
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+    font-size: x-large;
+    text-align: center;
+}
+
+
+input{
+    text-align: center;
+    padding: 8px 15px;
+    font-size: x-large;
+    size: min-content;
+    border: 1px solid #ccc;
+}
+
+input[type=text]::selection{
+    border: 3px solid lightblue;
+}
+
+input[type=password]{
+
+}
+
+label{
+    alignment: center;
+    color: black;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: all 0.5s ease-in-out;
+    padding: 5px 30px;
+    font-size: x-large;
+}
+
+label:hover{
+    border: 3px solid lightblue;
+
+}
+
+label:focus{
+    color: lightblue
+    border: 3px solid lightblue;
+    outline: lightblue none 3px;
+
+}
