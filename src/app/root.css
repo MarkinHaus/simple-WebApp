@@ -1,0 +1,9 @@
+body{
+    background-color: #87cefa;
+    display: grid;
+    font-family: 'Josefin Slab', serif;
+    font-size: xx-large;
+}
+.root {
+  background-color: #fff;
+}
