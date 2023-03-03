@@ -18,6 +18,7 @@ pub struct PropsTextInput {
     pub label: String,
     pub set_value: Callback<String>,
     pub open: bool,
+    pub perma_open: Option<bool>,
 }
 
 
@@ -82,11 +83,17 @@ impl Component for TextInputField {
         }
 
         let stylesheet = Style::new(STYLE).unwrap();
+        let mut p_open = false;
+        if let Some(d) = ctx.props().perma_open {
+            p_open = d;
+        };
+
+
         html! {
             <div class={stylesheet}>
 
                 <div class="container">
-                if self.edit.clone(){
+                if self.edit.clone() || p_open{
                     <input
                         class={ctx.props().class.clone()}
                         id={ctx.props().id.clone()}

@@ -1,102 +1,137 @@
-root{
-    alignment: center;
-    padding: 10% 10%;
-}
-
-body {
+*,
+*:before,
+*:after{
+    padding: 0;
     margin: 0;
-    font-family: 'Josefin Slab', serif;
-    font-weight: bold;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    box-sizing: border-box;
 }
 
 
-div{
+.wrapper{
+    box-sizing: content-box;
+    background-color: #fffa;
+    height: min-content;
+    font-size: 550%;
+    display: flex;
     text-align: center;
-    alignment: center;
-    position: center;
-    align: center;
-    width: 100%;
+}
+
+@media (max-width: 480px) {
+    .wrapper{
+        box-sizing: content-box;
+        background-color: #fffa;
+        height: min-content;
+        font-size: 350%;
+        display: flex;
+        text-align: center;
+    }
+}
+.words {
+    overflow: hidden;
 }
 
 
-h3{
-    color: dimgray;
-    top: 20px;
-    padding: 0 5px;
-}
-
-
-h2{
-    size: 12px;
-    top: 20px;
-    padding: 10px 5px;
-    vertical-align: middle;
-    display: inline-block;
-}
-
-section {
-    border-radius: 10px;
-    text-align: center;
-    padding: 16px;
-    border: 3px solid darkgray;
-    margin: auto;
-    width: 60%;
-    height: 60%;
-    alignment: center;
+.wrapper span{
     display: block;
-    margin-top: 5em;
-}
-
-h1{
-    font-family: Arial, Helvetica, sans-serif;
-    size: A3;
+    height: 100%;
+    padding-left: 10px;
+    animation: spin_words 10s infinite;
 }
 
 
-.day_d {
-    text-align: center;
-    margin: auto;
-    padding: 5%;
-    display: grid;
-    gap: 8px;
-}
+.wrapper div{
 
-
-
-.app-page {
-    border: 1px solid #ccc;
-    border-radius: 25px;
     width: 100%;
-    background: aliceblue;
-    margin: 15px;
-    height: max-content;
-}
-
-.app-page-close {
-    border: 1px solid #ccc;
-    border-radius: 25px;
-    width: 100%;
-    background: aliceblue;
-    margin: 15px;
-    height: 20vh;
-}
-
-.main-page {
+    height: 15vh;
     text-align: center;
-    alignment: center;
-    position: center;
-    align: center;
+    
+}
+
+.Apps {
+    text-align: center;
+    height: 50vh;
+    transition: 1s background 0.5s ease-in, 2s color 1s ease-out;
     margin: auto;
-    width: 50%;
-    padding: 10px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    width: 75%;
+    display: contents;
+    animation-name: fade_in_animation;
+    animation-duration: 0.75s;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10%;
+}
+
+@keyframes spin_words {
+    10%{
+        transform: translateY(-112%);
+    }
+    25%{
+        transform: translateY(-100%);
+    }
+    35%{
+        transform: translateY(-212%);
+    }
+    50%{
+        transform: translateY(-200%);
+    }
+    60%{
+        transform: translateY(-312%);
+    }
+    75%{
+        transform: translateY(-300%);
+    }
+    85%{
+        transform: translateY(-412%);
+    }
+    100%{
+        transform: translateY(-406%);
+    }
+}
+
+.fade-aut{
+  animation-name: fade_out_animation;
+  animation-duration: 2s;
+  animation-delay: 1s;
+}
+
+.fade-aut-speed{
+    animation-name: fade_out_animation;
+    animation-duration: 0.75s;
+}
+
+.app-box > a {
+    padding: 12px;
+    border: 2px solid;
+    border-radius: 12px;
+    display: list-item;
+    text-decoration: none;
+    font-size: larger;
+}
+
+@keyframes fade_in_animation{
+    0%{
+        color: #fff;
+        scale: 2;
+    }
+    100%{
+        color: #000;
+        scale: 1;
+    }
+}
+
+@keyframes fade_out_animation{
+    0%{
+        color: #000;
+        scale: 1;
+    }
+    100%{
+        color: #fff;
+        scale: 4;
+    }
 }
